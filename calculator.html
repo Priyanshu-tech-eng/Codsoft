@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PT Calculator</title>
+  <link href="cal.css" rel="stylesheet" type="text/css" />
+  <link href="text.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="customization-button" id="customize-button">Customize</div>
+  <div class="calculator">
+    <div class="history" id="history"></div>
+    <div class="small-button" id="clear-history">Clear History</div>
+    <div class="row">
+      <input type="text" id="display" readonly>
+    </div>
+    <div class="row">
+      <div class="button">7</div>
+      <div class="button">8</div>
+      <div class="button">9</div>
+      <div class="button">/</div>
+      <div class="button">sin</div>
+    </div>
+    <div class="row">
+      <div class="button">4</div>
+      <div class="button">5</div>
+      <div class="button">6</div>
+      <div class="button">*</div>
+      <div class="button">cos</div>
+    </div>
+    <div class="row">
+      <div class="button">1</div>
+      <div class="button">2</div>
+      <div class="button">3</div>
+      <div class="button">-</div>
+      <div class="button">tan</div>
+    </div>
+    <div class="row">
+      <div class="button">0</div>
+      <div class="button">.</div>
+      <div class="button">=</div>
+      <div class="button">+</div>
+      <div class="button">log</div>
+    </div>
+    <div class="row">
+      <div class="button">√</div>
+      <div class="button">x²</div>
+    </div>
+    <div class="row">
+      <div class="button-wide">C</div>
+      <div class="button-wide">Enter</div>
+    </div>
+    <div class="logo">
+      <img src="priyanshu logo.jpg" alt="Priyanshu Logo">
+    </div>
+  </div>
+  <div id="customization-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Customize Your Calculator</h2>
+      <label for="background-image">Background Image URL:</label>
+      <input type="text" id="background-image" placeholder="Enter URL here">
+      <br><br>
+      <label for="calculator-background">Calculator Background Color:</label>
+      <input type="color" id="calculator-background">
+      <br><br>
+      <button id="apply-customization">Apply</button>
+    </div>
+  </div>
+
+  <script src="cal.js"></script>
+</body>
+
+</html>
